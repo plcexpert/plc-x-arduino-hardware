@@ -1,0 +1,4 @@
+Copy this folder to Your hardware folder or Deffault Arduino folder.
+
+For example:
+"D:\Program Files (x86)\Arduino\hardware\"
