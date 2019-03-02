@@ -31,6 +31,26 @@ PLCAVR.menu.module.ATMEL328P.upload.maximum_size=32256
 PLCAVR.menu.module.ATMEL328P.upload.maximum_data_size=2048
 PLCAVR.menu.module.ATMEL328P.upload.speed=57600
 
+## Atmel 328P
+## -------------------------------------------------
+PLCAVR.menu.module.ATMEL328P20MHZ=* Atmel Mega328P (20Mhz)
+
+PLCAVR.menu.module.ATMEL328P20MHZ.bootloader.high_fuses=0xDA
+PLCAVR.menu.module.ATMEL328P20MHZ.bootloader.low_fuses=0xFF
+PLCAVR.menu.module.ATMEL328P20MHZ.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.ATMEL328P20MHZ.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.ATMEL328P20MHZ.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.ATMEL328P20MHZ.bootloader.file=ATmegaBOOT_168_atmega328.hex
+
+PLCAVR.menu.module.ATMEL328P20MHZ.build.mcu=atmega328p
+PLCAVR.menu.module.ATMEL328P20MHZ.build.f_cpu=20000000L
+PLCAVR.menu.module.ATMEL328P20MHZ.build.variant=atmel328p
+PLCAVR.menu.module.ATMEL328P20MHZ.build.board=AVR_UNO
+
+PLCAVR.menu.module.ATMEL328P20MHZ.upload.maximum_size=32256
+PLCAVR.menu.module.ATMEL328P20MHZ.upload.maximum_data_size=2048
+PLCAVR.menu.module.ATMEL328P20MHZ.upload.speed=57600
+
 ## Atmel 328PB
 ## -------------------------------------------------
 PLCAVR.menu.module.ATMEL328PB=* Atmel Mega328PB (16Mhz)
@@ -118,27 +138,44 @@ PLCAVR.menu.module.MEGA2560.pid.4=0x0210
 PLCAVR.menu.module.MEGA2560.vid.5=0x2341
 PLCAVR.menu.module.MEGA2560.pid.5=0x0242
 
-## -------------------- PRODUCTS --------------------
-
-## DIO - Digital Input/Ouput arduino shield
+## AT MEGA2560
 ## -------------------------------------------------
-PLCAVR.menu.module.DIO=PLC-DIO (Arduino UNO)
+PLCAVR.menu.module.MEGA256020MHZ=* Atmel Mega2560 (20Mhz)
 
-PLCAVR.menu.module.DIO.bootloader.high_fuses=0xDA
-PLCAVR.menu.module.DIO.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.DIO.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.DIO.bootloader.unlock_bits=0x3F
-PLCAVR.menu.module.DIO.bootloader.lock_bits=0x0F
-PLCAVR.menu.module.DIO.bootloader.file=ATmegaBOOT_168_atmega328.hex
+PLCAVR.menu.module.MEGA256020MHZ.bootloader.tool=avrdude
+PLCAVR.menu.module.MEGA256020MHZ.bootloader.low_fuses=0xFF
+PLCAVR.menu.module.MEGA256020MHZ.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.MEGA256020MHZ.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.MEGA256020MHZ.bootloader.high_fuses=0xD8
+PLCAVR.menu.module.MEGA256020MHZ.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.MEGA256020MHZ.bootloader.file=stk500boot_v2_mega2560.hex
 
-PLCAVR.menu.module.DIO.build.mcu=atmega328p
-PLCAVR.menu.module.DIO.build.f_cpu=16000000L
-PLCAVR.menu.module.DIO.build.variant=atmel328p
-PLCAVR.menu.module.DIO.build.board=AVR_UNO
+PLCAVR.menu.module.MEGA256020MHZ.build.f_cpu=20000000L
+PLCAVR.menu.module.MEGA256020MHZ.build.core=arduino
+PLCAVR.menu.module.MEGA256020MHZ.build.variant=mega
+PLCAVR.menu.module.MEGA256020MHZ.build.board=AVR_MEGA2560
+PLCAVR.menu.module.MEGA256020MHZ.build.mcu=atmega2560
+PLCAVR.menu.module.MEGA256020MHZ.build.board=AVR_MEGA2560
 
-PLCAVR.menu.module.DIO.upload.maximum_size=32256
-PLCAVR.menu.module.DIO.upload.maximum_data_size=2048
-PLCAVR.menu.module.DIO.upload.speed=57600
+PLCAVR.menu.module.MEGA256020MHZ.upload.maximum_data_size=8192
+PLCAVR.menu.module.MEGA256020MHZ.upload.protocol=wiring
+PLCAVR.menu.module.MEGA256020MHZ.upload.maximum_size=253952
+PLCAVR.menu.module.MEGA256020MHZ.upload.speed=115200
+
+PLCAVR.menu.module.MEGA256020MHZ.vid.0=0x2341
+PLCAVR.menu.module.MEGA256020MHZ.pid.0=0x0010
+PLCAVR.menu.module.MEGA256020MHZ.vid.1=0x2341
+PLCAVR.menu.module.MEGA256020MHZ.pid.1=0x0042
+PLCAVR.menu.module.MEGA256020MHZ.vid.2=0x2A03
+PLCAVR.menu.module.MEGA256020MHZ.pid.2=0x0010
+PLCAVR.menu.module.MEGA256020MHZ.vid.3=0x2A03
+PLCAVR.menu.module.MEGA256020MHZ.pid.3=0x0042
+PLCAVR.menu.module.MEGA256020MHZ.vid.4=0x2341
+PLCAVR.menu.module.MEGA256020MHZ.pid.4=0x0210
+PLCAVR.menu.module.MEGA256020MHZ.vid.5=0x2341
+PLCAVR.menu.module.MEGA256020MHZ.pid.5=0x0242
+
+## -------------------- PRODUCTS --------------------
 
 ## MicroPLC
 ## -------------------------------------------------
@@ -159,6 +196,26 @@ PLCAVR.menu.module.MICROPLC.build.board=AVR_UNO
 PLCAVR.menu.module.MICROPLC.upload.maximum_size=32256
 PLCAVR.menu.module.MICROPLC.upload.maximum_data_size=2048
 PLCAVR.menu.module.MICROPLC.upload.speed=57600
+
+## DIO - Digital Input/Ouput arduino shield
+## -------------------------------------------------
+PLCAVR.menu.module.DIO=PLC-DIO (Arduino UNO)
+
+PLCAVR.menu.module.DIO.bootloader.high_fuses=0xDA
+PLCAVR.menu.module.DIO.bootloader.low_fuses=0xFF
+PLCAVR.menu.module.DIO.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.DIO.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.DIO.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.DIO.bootloader.file=ATmegaBOOT_168_atmega328.hex
+
+PLCAVR.menu.module.DIO.build.mcu=atmega328p
+PLCAVR.menu.module.DIO.build.f_cpu=16000000L
+PLCAVR.menu.module.DIO.build.variant=atmel328p
+PLCAVR.menu.module.DIO.build.board=AVR_UNO
+
+PLCAVR.menu.module.DIO.upload.maximum_size=32256
+PLCAVR.menu.module.DIO.upload.maximum_data_size=2048
+PLCAVR.menu.module.DIO.upload.speed=57600
 
 ## TM - Temperature module
 ## -------------------------------------------------
