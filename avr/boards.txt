@@ -7,9 +7,28 @@ PLCAVR.name= PLC EXPERT
 
 PLCAVR.bootloader.tool=avrdude
 PLCAVR.build.core=arduino
-PLCAVR.build.board=AVR_UNO
 PLCAVR.upload.tool=avrdude
 PLCAVR.upload.protocol=arduino
+
+## Atmel 328P
+## -------------------------------------------------
+PLCAVR.menu.module.ATMEL328P8MHZ=* Atmel Mega328P (8Mhz)
+
+PLCAVR.menu.module.ATMEL328P8MHZ.bootloader.high_fuses=0xDA
+PLCAVR.menu.module.ATMEL328P8MHZ.bootloader.low_fuses=0xE2
+PLCAVR.menu.module.ATMEL328P8MHZ.bootloader.extended_fuses=0x05
+PLCAVR.menu.module.ATMEL328P8MHZ.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.ATMEL328P8MHZ.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.ATMEL328P8MHZ.bootloader.file=ATmegaBOOT_168_atmega328_pro_8MHz.hex
+
+PLCAVR.menu.module.ATMEL328P8MHZ.build.mcu=atmega328p
+PLCAVR.menu.module.ATMEL328P8MHZ.build.f_cpu=8000000L
+PLCAVR.menu.module.ATMEL328P8MHZ.build.variant=atmega328p
+PLCAVR.menu.module.ATMEL328P8MHZ.build.board=AVR_UNO
+
+PLCAVR.menu.module.ATMEL328P8MHZ.upload.maximum_size=32256
+PLCAVR.menu.module.ATMEL328P8MHZ.upload.maximum_data_size=2048
+PLCAVR.menu.module.ATMEL328P8MHZ.upload.speed=57600
 
 ## Atmel 328P
 ## -------------------------------------------------
@@ -24,7 +43,7 @@ PLCAVR.menu.module.ATMEL328P.bootloader.file=ATmegaBOOT_168_atmega328.hex
 
 PLCAVR.menu.module.ATMEL328P.build.mcu=atmega328p
 PLCAVR.menu.module.ATMEL328P.build.f_cpu=16000000L
-PLCAVR.menu.module.ATMEL328P.build.variant=atmel328p
+PLCAVR.menu.module.ATMEL328P.build.variant=atmega328p
 PLCAVR.menu.module.ATMEL328P.build.board=AVR_UNO
 
 PLCAVR.menu.module.ATMEL328P.upload.maximum_size=32256
@@ -44,12 +63,32 @@ PLCAVR.menu.module.ATMEL328P20MHZ.bootloader.file=ATmegaBOOT_168_atmega328.hex
 
 PLCAVR.menu.module.ATMEL328P20MHZ.build.mcu=atmega328p
 PLCAVR.menu.module.ATMEL328P20MHZ.build.f_cpu=20000000L
-PLCAVR.menu.module.ATMEL328P20MHZ.build.variant=atmel328p
+PLCAVR.menu.module.ATMEL328P20MHZ.build.variant=atmega328p
 PLCAVR.menu.module.ATMEL328P20MHZ.build.board=AVR_UNO
 
 PLCAVR.menu.module.ATMEL328P20MHZ.upload.maximum_size=32256
 PLCAVR.menu.module.ATMEL328P20MHZ.upload.maximum_data_size=2048
 PLCAVR.menu.module.ATMEL328P20MHZ.upload.speed=57600
+
+## WISP - Wirelles IPS programmer
+## -------------------------------------------------
+PLCAVR.menu.module.ATMEL328PB8MHZ=* Atmel Mega328PB (8Mhz)
+
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.low_fuses=0xE2
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.file=optiboot_m328pb.hex
+
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.mcu=ATmega328PB
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.f_cpu=8000000L
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.variant=atmega328pb
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.board=AVR_UNO
+
+PLCAVR.menu.module.ATMEL328PB8MHZ.upload.maximum_size=32256
+PLCAVR.menu.module.ATMEL328PB8MHZ.upload.maximum_data_size=2048
+PLCAVR.menu.module.ATMEL328PB8MHZ.upload.speed=57600
 
 ## Atmel 328PB
 ## -------------------------------------------------
@@ -64,12 +103,32 @@ PLCAVR.menu.module.ATMEL328PB.bootloader.file=optiboot_m328pb.hex
 
 PLCAVR.menu.module.ATMEL328PB.build.mcu=atmega328pb
 PLCAVR.menu.module.ATMEL328PB.build.f_cpu=16000000L
-PLCAVR.menu.module.ATMEL328PB.build.variant=atmel328pb
+PLCAVR.menu.module.ATMEL328PB.build.variant=atmega328pb
 PLCAVR.menu.module.ATMEL328PB.build.board=AVR_UNO
 
 PLCAVR.menu.module.ATMEL328PB.upload.maximum_size=32256
 PLCAVR.menu.module.ATMEL328PB.upload.maximum_data_size=2048
 PLCAVR.menu.module.ATMEL328PB.upload.speed=57600
+
+## Atmel 328PB
+## -------------------------------------------------
+PLCAVR.menu.module.ATMEL328PB20MHZ=* Atmel Mega328PB (20Mhz)
+
+PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.low_fuses=0xFF
+PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.unlock_bits=0xFF
+PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.lock_bits=0xCF
+PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.file=optiboot_m328pb.hex
+
+PLCAVR.menu.module.ATMEL328PB20MHZ.build.mcu=atmega328pb
+PLCAVR.menu.module.ATMEL328PB20MHZ.build.f_cpu=20000000L
+PLCAVR.menu.module.ATMEL328PB20MHZ.build.variant=atmega328pb
+PLCAVR.menu.module.ATMEL328PB20MHZ.build.board=AVR_UNO
+
+PLCAVR.menu.module.ATMEL328PB20MHZ.upload.maximum_size=32256
+PLCAVR.menu.module.ATMEL328PB20MHZ.upload.maximum_data_size=2048
+PLCAVR.menu.module.ATMEL328PB20MHZ.upload.speed=57600
 
 ## AT TINY85
 ## -------------------------------------------------
@@ -118,7 +177,6 @@ PLCAVR.menu.module.MEGA2560.build.core=arduino
 PLCAVR.menu.module.MEGA2560.build.variant=mega
 PLCAVR.menu.module.MEGA2560.build.board=AVR_MEGA2560
 PLCAVR.menu.module.MEGA2560.build.mcu=atmega2560
-PLCAVR.menu.module.MEGA2560.build.board=AVR_MEGA2560
 
 PLCAVR.menu.module.MEGA2560.upload.maximum_data_size=8192
 PLCAVR.menu.module.MEGA2560.upload.protocol=wiring
@@ -155,7 +213,6 @@ PLCAVR.menu.module.MEGA256020MHZ.build.core=arduino
 PLCAVR.menu.module.MEGA256020MHZ.build.variant=mega
 PLCAVR.menu.module.MEGA256020MHZ.build.board=AVR_MEGA2560
 PLCAVR.menu.module.MEGA256020MHZ.build.mcu=atmega2560
-PLCAVR.menu.module.MEGA256020MHZ.build.board=AVR_MEGA2560
 
 PLCAVR.menu.module.MEGA256020MHZ.upload.maximum_data_size=8192
 PLCAVR.menu.module.MEGA256020MHZ.upload.protocol=wiring
@@ -177,9 +234,64 @@ PLCAVR.menu.module.MEGA256020MHZ.pid.5=0x0242
 
 ## -------------------- PRODUCTS --------------------
 
+## DIO - Digital Input/Ouput arduino shield
+## -------------------------------------------------
+PLCAVR.menu.module.DIO=PLC-DIO (Arduino UNO)
+
+PLCAVR.menu.module.DIO.bootloader.high_fuses=0xDA
+PLCAVR.menu.module.DIO.bootloader.low_fuses=0xFF
+PLCAVR.menu.module.DIO.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.DIO.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.DIO.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.DIO.bootloader.file=ATmegaBOOT_168_atmega328.hex
+
+PLCAVR.menu.module.DIO.build.mcu=atmega328p
+PLCAVR.menu.module.DIO.build.f_cpu=16000000L
+PLCAVR.menu.module.DIO.build.variant=atmega328p
+PLCAVR.menu.module.DIO.build.board=AVR_UNO
+
+PLCAVR.menu.module.DIO.upload.maximum_size=32256
+PLCAVR.menu.module.DIO.upload.maximum_data_size=2048
+PLCAVR.menu.module.DIO.upload.speed=57600
+
+## LCD terminal 1.0
+## -------------------------------------------------
+PLCAVR.menu.module.LCDTERMINAL=PLC-LCD TERMINAL
+
+PLCAVR.menu.module.LCDTERMINAL.bootloader.tool=avrdude
+PLCAVR.menu.module.LCDTERMINAL.bootloader.low_fuses=0xFF
+PLCAVR.menu.module.LCDTERMINAL.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.LCDTERMINAL.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.LCDTERMINAL.bootloader.high_fuses=0xD8
+PLCAVR.menu.module.LCDTERMINAL.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.LCDTERMINAL.bootloader.file=stk500boot_v2_mega2560.hex
+
+PLCAVR.menu.module.LCDTERMINAL.build.f_cpu=16000000L
+PLCAVR.menu.module.LCDTERMINAL.build.core=arduino
+PLCAVR.menu.module.LCDTERMINAL.build.variant=mega
+PLCAVR.menu.module.LCDTERMINAL.build.board=AVR_MEGA2560
+PLCAVR.menu.module.LCDTERMINAL.build.mcu=atmega2560
+PLCAVR.menu.module.LCDTERMINAL.upload.maximum_data_size=8192
+PLCAVR.menu.module.LCDTERMINAL.upload.protocol=wiring
+PLCAVR.menu.module.LCDTERMINAL.upload.maximum_size=253952
+PLCAVR.menu.module.LCDTERMINAL.upload.speed=115200
+
+PLCAVR.menu.module.LCDTERMINAL.vid.0=0x2341
+PLCAVR.menu.module.LCDTERMINAL.pid.0=0x0010
+PLCAVR.menu.module.LCDTERMINAL.vid.1=0x2341
+PLCAVR.menu.module.LCDTERMINAL.pid.1=0x0042
+PLCAVR.menu.module.LCDTERMINAL.vid.2=0x2A03
+PLCAVR.menu.module.LCDTERMINAL.pid.2=0x0010
+PLCAVR.menu.module.LCDTERMINAL.vid.3=0x2A03
+PLCAVR.menu.module.LCDTERMINAL.pid.3=0x0042
+PLCAVR.menu.module.LCDTERMINAL.vid.4=0x2341
+PLCAVR.menu.module.LCDTERMINAL.pid.4=0x0210
+PLCAVR.menu.module.LCDTERMINAL.vid.5=0x2341
+PLCAVR.menu.module.LCDTERMINAL.pid.5=0x0242
+
 ## MicroPLC
 ## -------------------------------------------------
-PLCAVR.menu.module.MICROPLC=MicroPLC
+PLCAVR.menu.module.MICROPLC=PLC-Micro
 
 PLCAVR.menu.module.MICROPLC.bootloader.high_fuses=0xD6
 PLCAVR.menu.module.MICROPLC.bootloader.low_fuses=0xFF
@@ -197,25 +309,35 @@ PLCAVR.menu.module.MICROPLC.upload.maximum_size=32256
 PLCAVR.menu.module.MICROPLC.upload.maximum_data_size=2048
 PLCAVR.menu.module.MICROPLC.upload.speed=57600
 
-## DIO - Digital Input/Ouput arduino shield
+## RFID Reader
 ## -------------------------------------------------
-PLCAVR.menu.module.DIO=PLC-DIO (Arduino UNO)
+PLCAVR.menu.module.RFID=PLC-RFID Reader
 
-PLCAVR.menu.module.DIO.bootloader.high_fuses=0xDA
-PLCAVR.menu.module.DIO.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.DIO.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.DIO.bootloader.unlock_bits=0x3F
-PLCAVR.menu.module.DIO.bootloader.lock_bits=0x0F
-PLCAVR.menu.module.DIO.bootloader.file=ATmegaBOOT_168_atmega328.hex
+PLCAVR.menu.module.RFID.bootloader.high_fuses=0xdf
+PLCAVR.menu.module.RFID.bootloader.low_fuses=0xf1
+PLCAVR.menu.module.RFID.bootloader.extended_fuses=0xFF
+PLCAVR.menu.module.RFID.bootloader.unlock_bits=0xFF
+PLCAVR.menu.module.RFID.bootloader.lock_bits=0xFF
+PLCAVR.menu.module.RFID.bootloader.file=attiny85.hex
+PLCAVR.menu.module.RFID.bootloader.tool=arduino:avrdude
 
-PLCAVR.menu.module.DIO.build.mcu=atmega328p
-PLCAVR.menu.module.DIO.build.f_cpu=16000000L
-PLCAVR.menu.module.DIO.build.variant=atmel328p
-PLCAVR.menu.module.DIO.build.board=AVR_UNO
+PLCAVR.menu.module.RFID.build.core=digistump:tiny
+PLCAVR.menu.module.RFID.build.mcu=attiny85
+PLCAVR.menu.module.RFID.build.f_cpu=16000000L
+PLCAVR.menu.module.RFID.build.variant=tiny85
+PLCAVR.menu.module.RFID.build.board=attiny
 
-PLCAVR.menu.module.DIO.upload.maximum_size=32256
-PLCAVR.menu.module.DIO.upload.maximum_data_size=2048
-PLCAVR.menu.module.DIO.upload.speed=57600
+PLCAVR.menu.module.RFID.upload.maximum_size=8192
+PLCAVR.menu.module.RFID.upload.maximum_data_size=512
+PLCAVR.menu.module.RFID.upload.tool=micronucleus
+PLCAVR.menu.module.RFID.upload.protocol=usb
+PLCAVR.menu.module.RFID.upload.wait_for_upload_port=false
+PLCAVR.menu.module.RFID.upload.use_1200bps_touch=false
+PLCAVR.menu.module.RFID.upload.disable_flushing=false
+
+PLCAVR.menu.module.RFID.msg.info=Press Reset when Uploading is shown.
+PLCAVR.menu.module.RFID.vid.0=0x16D0
+PLCAVR.menu.module.RFID.pid.0=0x0753
 
 ## TM - Temperature module
 ## -------------------------------------------------
@@ -250,77 +372,31 @@ PLCAVR.menu.module.UK.bootloader.file=ATmegaBOOT_168_atmega328.hex
 
 PLCAVR.menu.module.UK.build.mcu=atmega328p
 PLCAVR.menu.module.UK.build.f_cpu=16000000L
-PLCAVR.menu.module.UK.build.variant=atmel328p
+PLCAVR.menu.module.UK.build.variant=atmega328p
 PLCAVR.menu.module.UK.build.board=AVR_UNO
 
 PLCAVR.menu.module.UK.upload.maximum_size=32256
 PLCAVR.menu.module.UK.upload.maximum_data_size=2048
 PLCAVR.menu.module.UK.upload.speed=57600
 
-## RFID Reader
+## WISP - Wirelles IPS programmer
 ## -------------------------------------------------
-PLCAVR.menu.module.RFID=RFID Reader
+PLCAVR.menu.module.WISP=PLC-WISP
 
-PLCAVR.menu.module.RFID.bootloader.high_fuses=0xdf
-PLCAVR.menu.module.RFID.bootloader.low_fuses=0xf1
-PLCAVR.menu.module.RFID.bootloader.extended_fuses=0xFF
-PLCAVR.menu.module.RFID.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.RFID.bootloader.lock_bits=0xFF
-PLCAVR.menu.module.RFID.bootloader.file=attiny85.hex
-PLCAVR.menu.module.RFID.bootloader.tool=arduino:avrdude
+PLCAVR.menu.module.WISP.bootloader.high_fuses=0xDA
+PLCAVR.menu.module.WISP.bootloader.low_fuses=0xE2
+PLCAVR.menu.module.WISP.bootloader.extended_fuses=0x05
+PLCAVR.menu.module.WISP.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.WISP.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.WISP.bootloader.file=optiboot_m328pb.hex
 
-PLCAVR.menu.module.RFID.build.core=digistump:tiny
-PLCAVR.menu.module.RFID.build.mcu=attiny85
-PLCAVR.menu.module.RFID.build.f_cpu=16000000L
-PLCAVR.menu.module.RFID.build.variant=tiny85
-PLCAVR.menu.module.RFID.build.board=attiny
+PLCAVR.menu.module.WISP.build.mcu=ATmega328PB
+PLCAVR.menu.module.WISP.build.f_cpu=8000000L
+PLCAVR.menu.module.WISP.build.variant=atmega328pb
+PLCAVR.menu.module.WISP.build.board=AVR_UNO
 
-PLCAVR.menu.module.RFID.upload.maximum_size=8192
-PLCAVR.menu.module.RFID.upload.maximum_data_size=512
-PLCAVR.menu.module.RFID.upload.tool=micronucleus
-PLCAVR.menu.module.RFID.upload.protocol=usb
-PLCAVR.menu.module.RFID.upload.wait_for_upload_port=false
-PLCAVR.menu.module.RFID.upload.use_1200bps_touch=false
-PLCAVR.menu.module.RFID.upload.disable_flushing=false
-
-PLCAVR.menu.module.RFID.msg.info=Press Reset when Uploading is shown.
-PLCAVR.menu.module.RFID.vid.0=0x16D0
-PLCAVR.menu.module.RFID.pid.0=0x0753
-
-## LCD terminal 1.0
-## -------------------------------------------------
-PLCAVR.menu.module.LCDTERMINAL=LCD TERMINAL
-
-PLCAVR.menu.module.LCDTERMINAL.bootloader.tool=avrdude
-PLCAVR.menu.module.LCDTERMINAL.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.LCDTERMINAL.bootloader.unlock_bits=0x3F
-PLCAVR.menu.module.LCDTERMINAL.bootloader.lock_bits=0x0F
-PLCAVR.menu.module.LCDTERMINAL.bootloader.high_fuses=0xD8
-PLCAVR.menu.module.LCDTERMINAL.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.LCDTERMINAL.bootloader.file=stk500boot_v2_mega2560.hex
-
-PLCAVR.menu.module.LCDTERMINAL.build.f_cpu=16000000L
-PLCAVR.menu.module.LCDTERMINAL.build.core=arduino
-PLCAVR.menu.module.LCDTERMINAL.build.variant=mega
-PLCAVR.menu.module.LCDTERMINAL.build.board=AVR_MEGA2560
-PLCAVR.menu.module.LCDTERMINAL.build.mcu=atmega2560
-PLCAVR.menu.module.LCDTERMINAL.build.board=AVR_MEGA2560
-PLCAVR.menu.module.LCDTERMINAL.upload.maximum_data_size=8192
-PLCAVR.menu.module.LCDTERMINAL.upload.protocol=wiring
-PLCAVR.menu.module.LCDTERMINAL.upload.maximum_size=253952
-PLCAVR.menu.module.LCDTERMINAL.upload.speed=115200
-
-PLCAVR.menu.module.LCDTERMINAL.vid.0=0x2341
-PLCAVR.menu.module.LCDTERMINAL.pid.0=0x0010
-PLCAVR.menu.module.LCDTERMINAL.vid.1=0x2341
-PLCAVR.menu.module.LCDTERMINAL.pid.1=0x0042
-PLCAVR.menu.module.LCDTERMINAL.vid.2=0x2A03
-PLCAVR.menu.module.LCDTERMINAL.pid.2=0x0010
-PLCAVR.menu.module.LCDTERMINAL.vid.3=0x2A03
-PLCAVR.menu.module.LCDTERMINAL.pid.3=0x0042
-PLCAVR.menu.module.LCDTERMINAL.vid.4=0x2341
-PLCAVR.menu.module.LCDTERMINAL.pid.4=0x0210
-PLCAVR.menu.module.LCDTERMINAL.vid.5=0x2341
-PLCAVR.menu.module.LCDTERMINAL.pid.5=0x0242
+PLCAVR.menu.module.WISP.upload.maximum_size=32256
+PLCAVR.menu.module.WISP.upload.maximum_data_size=2048
+PLCAVR.menu.module.WISP.upload.speed=57600
 
 ###################   ATMEL AVR (END)  ##############################
