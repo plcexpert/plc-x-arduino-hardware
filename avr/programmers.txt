@@ -1,8 +1,11 @@
-bewisp01b.name=BE-WISP01 (115200)
+bewisp01b.name=PLC-WISP
 bewisp01b.communication=serial
 bewisp01b.protocol=stk500v1
-bewisp01b.speed=115200
+bewisp01b.speed=57600
 bewisp01b.program.protocol=stk500v1
-bewisp01b.program.speed=115200
+bewisp01b.program.speed=57600
 bewisp01b.program.tool=avrdude
 bewisp01b.program.extra_params=-P{serial.port} -b{program.speed}
+
+
+
