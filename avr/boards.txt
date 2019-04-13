@@ -3,12 +3,14 @@
 menu.module=Product
 
 ###################   ATMEL AVR   ##################################
-PLCAVR.name= PLC EXPERT
+PLCAVR.name= PLC-EXPERT
 
 PLCAVR.bootloader.tool=avrdude
 PLCAVR.build.core=arduino
+PLCAVR.build.board=AVR_UNO
 PLCAVR.upload.tool=avrdude
 PLCAVR.upload.protocol=arduino
+
 
 ## Atmel 328P
 ## -------------------------------------------------
