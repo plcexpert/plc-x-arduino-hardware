@@ -1,9 +1,11 @@
-
-// FILE: PLC_TM.h
-// AUTHOR: Ales Bedac
-// PURPOSE: Digital Input/Output Board
-// PRODUCT NAME: PLC Temperature Module
-// URL: http://www.plc-expert.com
+/******************************************************************
+  Project name : PLC-TM board Library v. 1.1
+  Author       : 
+  Date Time    :
+  Description  : Temperature module
+  CPU BOARD    : 
+  URL          : www.plc-expert.com
+******************************************************************/
 
 
 #ifndef PLC_TM_h

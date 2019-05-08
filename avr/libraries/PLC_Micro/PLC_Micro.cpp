@@ -1,15 +1,15 @@
 /******************************************************************
-  Project name : Micro PLC board Library
+  Project name : PLC-Micro PLC board Library
   Author       : 
   Date Time    :
   Description  :   
-  CPU BOARD    : MicroPLC
+  CPU BOARD    : PLC-Micro
   URL          : www.plc-expert.com
 ******************************************************************/
-#include "PLC_MicroPLC.h"
+#include "PLC_Micro.h"
 
 //PRIVATE METHODS
-void PLC_MicroPLC::SetupPorts(){
+void PLC_Micro::SetupPorts(){
   //Setup port mode
   pinMode(INPUT_1, INPUT);	
   pinMode(INPUT_2, INPUT);
@@ -33,7 +33,7 @@ void PLC_MicroPLC::SetupPorts(){
 }
 
 //PUBLIC METHODS
-bool PLC_MicroPLC::Input(int InputNumber){
+bool PLC_Micro::Input(int InputNumber){
 	byte port_number;
 	
 	switch(InputNumber)
@@ -81,7 +81,7 @@ bool PLC_MicroPLC::Input(int InputNumber){
 	}
 }
 
-void PLC_MicroPLC::Output(int OutputNumber, bool NewState){
+void PLC_Micro::Output(int OutputNumber, bool NewState){
 	byte port_number;
 	
 	switch(OutputNumber)

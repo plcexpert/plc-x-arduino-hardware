@@ -1,11 +1,11 @@
-//
-// FILE: PLC_DIO.cpp
-// AUTHOR: PLC-EXPERT
-// PRODUCT NAME: PLC-Temperature module// URL: http://www.plc-expert.com
-//
-// HISTORY:
-// 0.1    Initial version
-// 0.2    Modifed library name and moved to hardware folder
+/******************************************************************
+  Project name : DS18B20 board Library v. 1.1
+  Author       : 
+  Date Time    :
+  Description  : Temperature sensor library to simplify usage
+  CPU BOARD    : 
+  URL          : www.plc-expert.com
+******************************************************************/
 
 #include "PLC_DS18B20.h"
 #include <OneWire.h>

@@ -1,5 +1,5 @@
 /******************************************************************
-  Project name : DIO Library v. 1.1
+  Project name : PLC-DIO Library v. 1.1
   Author       : 
   Date Time    :
   Description  : Digital IO shield  

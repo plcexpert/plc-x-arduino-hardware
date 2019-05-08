@@ -1,9 +1,9 @@
 /******************************************************************
-  Project name : Micro PLC example project
+  Project name : PLC-Micro example project
   Author       : 
   Date Time    : 
   Description  : 512kB EEPROM usage example
-  CPU BOARD    : MicroPLC
+  CPU BOARD    : PLC-Micro
   URL          : 
 ******************************************************************/
 #include <Wire.h>

@@ -1,5 +1,5 @@
 /******************************************************************
-  Project name : DIO - Example project 
+  Project name : PLC-DIO - Example project 
   Author       : 
   Date Time    :
   Description  :   

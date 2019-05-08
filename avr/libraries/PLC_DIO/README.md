@@ -1,6 +1,6 @@
-# Arduino_BE-DIO
-Library for digital input/output shield : BE-DIO (13 In; 7 Out)
-Product page : http://www.bedac.cz/produkty_automation.htm
+# Arduino_PLC-DIO
+Library for PLC-DIO (digital input/output shield) with 13 Inputs and 7 Outputs
+Product page : http://www.plc-expert.com/product-category/hardware/
 
 Features:
 * Get input state

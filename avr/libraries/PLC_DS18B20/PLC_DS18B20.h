@@ -1,10 +1,11 @@
-
-// FILE: PLC_DIO.h
-// AUTHOR: PLC-EXPERT
-// PURPOSE: Digital Input/Output Board
-// PRODUCT NAME: PLC-DIO (13 in; 7 out)
-// URL: http://www.plc-expert.com
-
+/******************************************************************
+  Project name : DS18B20 board Library v. 1.1
+  Author       : 
+  Date Time    :
+  Description  : Temperature sensor library to simplify usage
+  CPU BOARD    : 
+  URL          : www.plc-expert.com
+******************************************************************/
 
 #ifndef PLC_DS18B20_h
 #define PLC_DS18B20_h

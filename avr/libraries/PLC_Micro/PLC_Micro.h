@@ -1,25 +1,25 @@
 /******************************************************************
-  Project name : Micro PLC board Library v. 1.1
+  Project name : PLC-Micro board Library v. 1.1
   Author       : 
   Date Time    :
   Description  : 
-  CPU BOARD    : MicroPLC
+  CPU BOARD    : PLC-Micro
   URL          : www.plc-expert.com
 ******************************************************************/
 
-#ifndef PLC_MicroPLC_h
-#define PLC_MicroPLC_h
+#ifndef PLC_Micro_h
+#define PLC_Micro_h
 
 #include <Arduino.h>
 
-class PLC_MicroPLC
+class PLC_Micro
 {
 public:
-    PLC_MicroPLC()
+    PLC_Micro()
 	{	
 		SetupPorts();
 	};
-	~PLC_MicroPLC(){};
+	~PLC_Micro(){};
 	
 	bool Input(int InputNumber);
     void Output(int OutputNumber, bool NewState);

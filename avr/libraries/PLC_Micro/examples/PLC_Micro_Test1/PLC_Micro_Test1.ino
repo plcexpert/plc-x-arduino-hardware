@@ -1,12 +1,12 @@
 /******************************************************************
-  Project name : MicroPLC example project
+  Project name : PLC-Micro example project
   Author       : 
   Date Time    : 
   Description  : 
-  CPU BOARD    : MicroPLC
+  CPU BOARD    : PLC-Micro
   URL          : www.plc-expert.com
 ******************************************************************/
-#include "PLC_MicroPLC.h"
+#include "PLC_Micro.h"
 PLC_MicroPLC plc;
 
 bool state;

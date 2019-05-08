@@ -1,11 +1,11 @@
-//
-// FILE: PLC_TM.cpp
-// AUTHOR: PLC-EXPERT
-// PRODUCT NAME: TM// URL: http://www.plc-expert.com
-//
-// HISTORY:
-// 0.1    Initial version
-// 0.1    Modifed library name and moved to hardware folder
+/******************************************************************
+  Project name : PLC-TM board Library v. 1.1
+  Author       : 
+  Date Time    :
+  Description  : Temperature module
+  CPU BOARD    : 
+  URL          : www.plc-expert.com
+******************************************************************/
 
 #include "PLC_TM.h"
 
