@@ -85,6 +85,9 @@ static const uint8_t MOSI = PIN_SPI_MOSI;
 static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SCK  = PIN_SPI_SCK;
 
+static const uint8_t A4 = PIN_A4;
+static const uint8_t A5 = PIN_A5;
+
 #ifdef ARDUINO_MAIN
 
 // these arrays map port names (e.g. port B) to the
