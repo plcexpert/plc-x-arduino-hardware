@@ -1,9 +1,9 @@
 /******************************************************************
   Project name : Wireless ISP programmer (Bluetooth)
-  Author       : Ales Bedac
-  Date Time    : 2017-01-01
-  Description  : Uses BT-112M BT module
-  CPU BOARD    : Stadnard Arduino UNO (Atmel 328P)
+  Author       : 
+  Date Time    : 
+  Description  : 
+  CPU BOARD    : 
 ******************************************************************/
 
 #include "Arduino.h"
@@ -181,9 +181,9 @@ void setup()
   delay(100);
   SERIAL.println("at");
   delay(100);
-  SERIAL.println("atn=BeWisp_BT 1.0");      //Set BT name
+  SERIAL.println("atn=PlcWisp 1.0");      //Set BT name
   delay(100);
-  SERIAL.println("atl5");                   // Set 115 200 baudrate
+  SERIAL.println("atl5");                 // Set 115 200 baudrate
   delay(100);
   SERIAL.end();
   delay(100);

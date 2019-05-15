@@ -7,18 +7,18 @@
   URL          : www.plc-expert.com
 ******************************************************************/
 
-#include "PLC_DS18B20.h"
+#include "PLC-DS18B20.h"
 #include <OneWire.h>
 
 
-PLC_DS18B20::PLC_DS18B20(){
+PLC-DS18B20::PLC-DS18B20(){
 	SetDelay(1000);
 };
 
-void PLC_DS18B20::SetDelay(int sensorDelay){
+void PLC-DS18B20::SetDelay(int sensorDelay){
 	SensorDelay = sensorDelay;
 };
-//PUBLIC METHODSfloat PLC_DS18B20::ReadSensor(int PinNumber){
+//PUBLIC METHODSfloat PLC-DS18B20::ReadSensor(int PinNumber){
   //Declare sensor
   OneWire Sensor(PinNumber);
   

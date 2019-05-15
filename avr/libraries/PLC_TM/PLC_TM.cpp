@@ -7,14 +7,14 @@
   URL          : www.plc-expert.com
 ******************************************************************/
 
-#include "PLC_TM.h"
+#include "PLC-TM.h"
 
-PLC_TM::PLC_TM(){		
+PLC-TM::PLC-TM(){		
 	SetupPorts();	
 };
 
 //Constructor
-void PLC_TM::SetupPorts()
+void PLC-TM::SetupPorts()
 {
 	//INPUTS
 	//InputPin_1 is analog input only
@@ -30,7 +30,7 @@ void PLC_TM::SetupPorts()
 	pinMode(OutputPin_5, OUTPUT);
 	pinMode(OutputPin_6, OUTPUT);
 }
-//PUBLIC METHODSvoid PLC_TM::Output(int OutputNumber, bool NewState){	
+//PUBLIC METHODSvoid PLC-TM::Output(int OutputNumber, bool NewState){	
 		byte port_number;
 	
 	switch(OutputNumber)
@@ -58,7 +58,7 @@ void PLC_TM::SetupPorts()
 	}	
 	
 	digitalWrite(port_number, NewState);}
-bool PLC_TM::Input(int InputNumber){
+bool PLC-TM::Input(int InputNumber){
   	byte port_number;
 	
 	switch(InputNumber)

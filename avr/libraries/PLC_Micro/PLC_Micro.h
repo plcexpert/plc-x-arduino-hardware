@@ -21,9 +21,6 @@ public:
 	};
 	~PLC_Micro(){};
 	
-	bool Input(int InputNumber);
-    void Output(int OutputNumber, bool NewState);
-	
 private:
    void SetupPorts();
 };

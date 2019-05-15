@@ -9,9 +9,30 @@
 
 #include "PLC_DIO.h"
 
+#define INPUT_1 0
+#define INPUT_2 1
+#define INPUT_3 2
+#define INPUT_4 3
+#define INPUT_5 4
+#define INPUT_6 5
+#define INPUT_7 6
+#define INPUT_8 A5
+#define INPUT_9 A4
+#define INPUT_10 A3
+#define INPUT_11 A2
+#define INPUT_12 A1
+#define INPUT_13 A0
+
+#define OUTPUT_1 7
+#define OUTPUT_2 8
+#define OUTPUT_3 9
+#define OUTPUT_4 10
+#define OUTPUT_5 11
+#define OUTPUT_6 12
+#define OUTPUT_7 13
+
 //PRIVATE METHODS
-void PLC_DIO::SetupPorts()
-{
+void PLC_DIO::SetupPorts(){
   pinMode(INPUT_1, INPUT);	
   pinMode(INPUT_2, INPUT);
   pinMode(INPUT_3, INPUT);

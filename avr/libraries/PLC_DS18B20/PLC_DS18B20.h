@@ -7,18 +7,18 @@
   URL          : www.plc-expert.com
 ******************************************************************/
 
-#ifndef PLC_DS18B20_h
-#define PLC_DS18B20_h
+#ifndef PLC-DS18B20_h
+#define PLC-DS18B20_h
 
 #include <Arduino.h>
 
-#define PLC_DS18B20_LIB_VERSION "0.1"
+#define PLC-DS18B20_LIB_VERSION "0.1"
 
-class PLC_DS18B20
+class PLC-DS18B20
 {
 public:
-	PLC_DS18B20();
-	~PLC_DS18B20(){};
+	PLC-DS18B20();
+	~PLC-DS18B20(){};
 	float ReadSensor(int PinNumber);
 	void SetDelay(int sensorDelay);
 private:

@@ -8,12 +8,12 @@
 ******************************************************************/
 
 
-#ifndef PLC_TM_h
-#define PLC_TM_h
+#ifndef PLC-TM_h
+#define PLC-TM_h
 
 #include <Arduino.h>
 
-#define PLC_TM_LIB_VERSION "0.1"
+#define PLC-TM_LIB_VERSION "0.1"
 
 //Digital inputs
 #define InputPin_1 21	//A7
@@ -44,11 +44,11 @@
 	#include <SoftwareSerial.h>
 #endif
 
-class PLC_TM
+class PLC-TM
 {
 public:
-	PLC_TM();    
-	~PLC_TM(){};	
+	PLC-TM();    
+	~PLC-TM(){};	
 	bool Input(int InputNumber);
     void Output(int OutputNumber, bool NewState);
 private:

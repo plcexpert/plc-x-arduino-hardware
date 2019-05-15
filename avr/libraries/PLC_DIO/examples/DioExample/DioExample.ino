@@ -15,14 +15,10 @@ void setup()
 
 void loop()
 { 
-  if(dio.Input(10))
-  {
-    dio.Output(1, true);
-  }
-  else
-  {
-    dio.Output(1, false);
-  }
-   
-  delay(100);
+  dio.Output(1, true);
+  delay(1000);
+  dio.Output(1, false);
+
+  dio.Output(5, dio.Input(3));  
+  delay(500);
 }
