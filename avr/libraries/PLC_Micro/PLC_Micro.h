@@ -20,8 +20,9 @@ public:
 		SetupPorts();
 	};
 	~PLC_Micro(){};
-	
+	void SetupPorts();
+	 
 private:
-   void SetupPorts();
+
 };
 #endif

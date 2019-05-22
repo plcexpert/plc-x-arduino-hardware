@@ -97,6 +97,26 @@ static const uint8_t A5 = PIN_A5;
 static const uint8_t A6 = PIN_A6;
 static const uint8_t A7 = PIN_A7;
 
+static const uint8_t INPUT_1 = 5;
+static const uint8_t INPUT_2 = 6;
+static const uint8_t INPUT_3 = 7;
+static const uint8_t INPUT_4 = 8;
+static const uint8_t INPUT_5 = 9;
+static const uint8_t INPUT_6 = 10;
+static const uint8_t INPUT_7 = 11;
+static const uint8_t INPUT_8 = 12;
+static const uint8_t INPUT_9 = PIN_A6;
+static const uint8_t INPUT_10 = PIN_A7;
+
+static const uint8_t OUTPUT_1 = 3;
+static const uint8_t OUTPUT_2 = 4;
+static const uint8_t OUTPUT_3 = 2;
+static const uint8_t OUTPUT_4 = PIN_A3;
+static const uint8_t OUTPUT_5 = PIN_A2;
+static const uint8_t OUTPUT_6 = 13;		
+static const uint8_t OUTPUT_7 = PIN_A1;
+static const uint8_t OUTPUT_8 = PIN_A0;
+
 #define digitalPinToPCICR(p)    (((p) >= 0 && (p) <= 23) ? (&PCICR) : ((uint8_t *)0))
 #define digitalPinToPCICRbit(p) (((p) <= 7) ? 2 : (((p) <= 13) ? 0 : 1))
 #define digitalPinToPCMSK(p)    (((p) <= 7) ? (&PCMSK2) : (((p) <= 13) ? (&PCMSK0) : (((p) <= 23) ? (&PCMSK1) : ((uint8_t *)0))))

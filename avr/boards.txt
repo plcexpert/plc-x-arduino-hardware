@@ -1,9 +1,9 @@
 # See: http://code.google.com/p/arduino/wiki/Platforms
 
-menu.module=Product
-
 ###################   ATMEL AVR   ##################################
-PLCAVR.name= PLC-EXPERT
+menu.module=Product
+PLCAVR.name= PLC-EXPERT (AVR)
+
 
 PLCAVR.bootloader.tool=avrdude
 PLCAVR.build.core=arduino
@@ -291,9 +291,9 @@ PLCAVR.menu.module.LCDTERMINAL.pid.4=0x0210
 PLCAVR.menu.module.LCDTERMINAL.vid.5=0x2341
 PLCAVR.menu.module.LCDTERMINAL.pid.5=0x0242
 
-## MicroPLC
+## MicroPLC 1.3
 ## -------------------------------------------------
-PLCAVR.menu.module.MICROPLC=PLC-Micro
+PLCAVR.menu.module.MICROPLC=PLC-Micro 1.3
 
 PLCAVR.menu.module.MICROPLC.bootloader.high_fuses=0xD6
 PLCAVR.menu.module.MICROPLC.bootloader.low_fuses=0xFF

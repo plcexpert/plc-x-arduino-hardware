@@ -14,7 +14,7 @@
 
 union IoPorts
 {
-	uint8_t ByteValue;
+	uint8_t Value;
 	struct
 	{
 		bool port1 : 1;
@@ -25,7 +25,7 @@ union IoPorts
 		bool port6 : 1;
 		bool port7 : 1;
 		bool port8 : 1;
-	};	   
+	};
 };
 
 class PLC_Automation
