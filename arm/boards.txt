@@ -18,6 +18,13 @@
 menu.module=Product
 PLCARM.name= PLC-EXPERT (ARM)
 
+PLCARM.bootloader.tool=openocd
+PLCARM.build.core=arduino
+PLCARM.build.board=SAMD_ZERO
+PLCARM.upload.tool=bossac
+PLCARM.upload.protocol=sam-ba
+
+
 ## AT SAMD21G18
 ## -------------------------------------------------
 PLCARM.menu.module.SAMD21G18=* AT SAMD21G18 (Native USB port)

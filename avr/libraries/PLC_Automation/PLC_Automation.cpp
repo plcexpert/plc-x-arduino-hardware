@@ -24,10 +24,7 @@ bool PLC_Automation::Input(uint8_t InputNumber){
 }
 
 void PLC_Automation::Output(uint8_t OutputNumber, bool NewState){
-
-	digitalWrite(OutputNumber, NewState);
-	
-	
+	digitalWrite(OutputNumber, NewState);	
 }
 
 bool PLC_Automation::Output(uint8_t OutputNumber){
