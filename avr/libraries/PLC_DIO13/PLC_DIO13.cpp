@@ -1,5 +1,5 @@
 /******************************************************************
-  Project name : PLC-DIO Library v. 1.1
+  Project name : PLC-DIO 1.3 Library v. 1.1
   Author       : 
   Date Time    :
   Description  : Digital IO shield  
@@ -7,7 +7,7 @@
   URL          : www.plc-expert.com
 ******************************************************************/
 
-#include "PLC_DIO.h"
+#include "PLC_DIO13.h"
 
 #define INPUT_1 0
 #define INPUT_2 1
@@ -32,7 +32,7 @@
 #define OUTPUT_7 13
 
 //PRIVATE METHODS
-void PLC_DIO::SetupPorts(){
+void PLC_DIO13::SetupPorts(){
   pinMode(INPUT_1, INPUT);	
   pinMode(INPUT_2, INPUT);
   pinMode(INPUT_3, INPUT);
@@ -56,7 +56,7 @@ void PLC_DIO::SetupPorts(){
   pinMode(OUTPUT_7, OUTPUT); 
 }
 
-//PUBLIC METHODSbool PLC_DIO::Input(int InputNumber){
+//PUBLIC METHODSbool PLC_DIO13::Input(int InputNumber){
   	byte port_number;
 	
 	switch(InputNumber)
@@ -113,7 +113,7 @@ void PLC_DIO::SetupPorts(){
 	}
 }
 
-void PLC_DIO::Output(int OutputNumber, bool NewState){
+void PLC_DIO13::Output(int OutputNumber, bool NewState){
 	byte port_number;
 
 	switch(OutputNumber)
