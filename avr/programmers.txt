@@ -1,11 +1,11 @@
-plcwisp01b.name=PLC-WISP
-plcwisp01b.communication=serial
-plcwisp01b.protocol=stk500v1
-plcwisp01b.speed=57600
-plcwisp01b.program.protocol=stk500v1
-plcwisp01b.program.speed=57600
-plcwisp01b.program.tool=avrdude
-plcwisp01b.program.extra_params=-P{serial.port} -b{program.speed}
+plcwisp19200.name=PLC-WISP
+plcwisp19200.communication=serial
+plcwisp19200.protocol=stk500v1
+plcwisp19200.speed=115200
+plcwisp19200.program.protocol=stk500v1
+plcwisp19200.program.speed=115200
+plcwisp19200.program.tool=avrdude
+plcwisp19200.program.extra_params=-P{serial.port} -b{program.speed}
 
 
 
