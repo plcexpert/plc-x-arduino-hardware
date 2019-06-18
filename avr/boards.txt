@@ -72,7 +72,7 @@ PLCAVR.menu.module.ATMEL328P20MHZ.upload.maximum_size=32256
 PLCAVR.menu.module.ATMEL328P20MHZ.upload.maximum_data_size=2048
 PLCAVR.menu.module.ATMEL328P20MHZ.upload.speed=57600
 
-## WISP - Wirelles IPS programmer
+## Atmel 328PB
 ## -------------------------------------------------
 PLCAVR.menu.module.ATMEL328PB8MHZ=* Atmel Mega328PB (8Mhz)
 
