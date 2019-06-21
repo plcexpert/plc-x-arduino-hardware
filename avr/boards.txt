@@ -96,41 +96,41 @@ PLCAVR.menu.module.ATMEL328PB8MHZ.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.ATMEL328PB=* Atmel Mega328PB (16Mhz)
 
-PLCAVR.menu.module.ATMEL328PB.bootloader.high_fuses=0xD6
-PLCAVR.menu.module.ATMEL328PB.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.ATMEL328PB.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.ATMEL328PB.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATMEL328PB.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.ATMEL328PB.bootloader.file=optiboot_m328pb.hex
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.low_fuses=0xE2
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.file=optiboot_m328pb.hex
 
-PLCAVR.menu.module.ATMEL328PB.build.mcu=atmega328pb
-PLCAVR.menu.module.ATMEL328PB.build.f_cpu=16000000L
-PLCAVR.menu.module.ATMEL328PB.build.variant=atmega328pb
-PLCAVR.menu.module.ATMEL328PB.build.board=AVR_UNO
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.mcu=ATmega328PB
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.f_cpu=16000000L
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.variant=atmega328pb
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.board=AVR_UNO
 
-PLCAVR.menu.module.ATMEL328PB.upload.maximum_size=32256
-PLCAVR.menu.module.ATMEL328PB.upload.maximum_data_size=2048
-PLCAVR.menu.module.ATMEL328PB.upload.speed=57600
+PLCAVR.menu.module.ATMEL328PB8MHZ.upload.maximum_size=32256
+PLCAVR.menu.module.ATMEL328PB8MHZ.upload.maximum_data_size=2048
+PLCAVR.menu.module.ATMEL328PB8MHZ.upload.speed=57600
 
 ## Atmel 328PB
 ## -------------------------------------------------
 PLCAVR.menu.module.ATMEL328PB20MHZ=* Atmel Mega328PB (20Mhz)
 
-PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.high_fuses=0xD6
-PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.ATMEL328PB20MHZ.bootloader.file=optiboot_m328pb.hex
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.low_fuses=0xE2
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.ATMEL328PB8MHZ.bootloader.file=optiboot_m328pb.hex
 
-PLCAVR.menu.module.ATMEL328PB20MHZ.build.mcu=atmega328pb
-PLCAVR.menu.module.ATMEL328PB20MHZ.build.f_cpu=20000000L
-PLCAVR.menu.module.ATMEL328PB20MHZ.build.variant=atmega328pb
-PLCAVR.menu.module.ATMEL328PB20MHZ.build.board=AVR_UNO
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.mcu=ATmega328PB
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.f_cpu=20000000L
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.variant=atmega328pb
+PLCAVR.menu.module.ATMEL328PB8MHZ.build.board=AVR_UNO
 
-PLCAVR.menu.module.ATMEL328PB20MHZ.upload.maximum_size=32256
-PLCAVR.menu.module.ATMEL328PB20MHZ.upload.maximum_data_size=2048
-PLCAVR.menu.module.ATMEL328PB20MHZ.upload.speed=57600
+PLCAVR.menu.module.ATMEL328PB8MHZ.upload.maximum_size=32256
+PLCAVR.menu.module.ATMEL328PB8MHZ.upload.maximum_data_size=2048
+PLCAVR.menu.module.ATMEL328PB8MHZ.upload.speed=57600
 
 ## AT TINY85
 ## -------------------------------------------------
@@ -385,9 +385,9 @@ PLCAVR.menu.module.UK.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.WISP=PLC-WISP
 
-PLCAVR.menu.module.WISP.bootloader.high_fuses=0xDA
+PLCAVR.menu.module.WISP.bootloader.high_fuses=0xD6
 PLCAVR.menu.module.WISP.bootloader.low_fuses=0xE2
-PLCAVR.menu.module.WISP.bootloader.extended_fuses=0x05
+PLCAVR.menu.module.WISP.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.WISP.bootloader.unlock_bits=0x3F
 PLCAVR.menu.module.WISP.bootloader.lock_bits=0x0F
 PLCAVR.menu.module.WISP.bootloader.file=optiboot_m328pb.hex
