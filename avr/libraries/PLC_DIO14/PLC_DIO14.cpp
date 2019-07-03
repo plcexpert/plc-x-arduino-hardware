@@ -16,12 +16,12 @@
 #define INPUT_5 4
 #define INPUT_6 5
 #define INPUT_7 6
-#define INPUT_8 A7
-#define INPUT_9 A6
-#define INPUT_10 A3
-#define INPUT_11 A2
-#define INPUT_12 A1
-#define INPUT_13 A0
+#define INPUT_8 A1
+#define INPUT_9 A0
+#define INPUT_10 A2
+#define INPUT_11 A3
+#define INPUT_12 A6
+#define INPUT_13 A7
 
 #define OUTPUT_1 13
 #define OUTPUT_2 12
@@ -40,12 +40,12 @@ void PLC_DIO14::SetupPorts(){
   pinMode(INPUT_5, INPUT);
   pinMode(INPUT_6, INPUT);
   pinMode(INPUT_7, INPUT);
-  //pinMode(INPUT_8, INPUT);	//ANALOG
-  //pinMode(INPUT_9, INPUT);	//ANALOG
+  pinMode(INPUT_8, INPUT);
+  pinMode(INPUT_9, INPUT);	
   pinMode(INPUT_10, INPUT);
   pinMode(INPUT_11, INPUT);
-  pinMode(INPUT_12, INPUT);
-  pinMode(INPUT_13, INPUT);
+  //pinMode(INPUT_12, INPUT);//ANALOG
+  //pinMode(INPUT_13, INPUT);//ANALOG
   
   pinMode(OUTPUT_1, OUTPUT);
   pinMode(OUTPUT_2, OUTPUT);
@@ -102,7 +102,7 @@ void PLC_DIO14::SetupPorts(){
 			break;
 	}
 	
-	if(port_number == INPUT_8 || port_number == INPUT_9)
+	if(port_number == INPUT_12 || port_number == INPUT_13)
 	{
 		//analog inputs only
 		return (analogRead(port_number) < 500);

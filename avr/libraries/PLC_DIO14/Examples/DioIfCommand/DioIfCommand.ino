@@ -1,13 +1,13 @@
 /******************************************************************
-  Project name : PLC-DIO - Example project 
+  Project name : PLC-DIO 1.4 - Example project 
   Author       : 
   Date Time    :
   Description  :   
-  CPU BOARD    : Arduon Uno, Mini, Nano... (Atmel328P)
+  CPU BOARD    : Arduon Nano (Atmel328P)
   URL          : www.plc-expert.com
 ******************************************************************/
-#include <PLC_DIO.h>
-PLC_DIO dio;
+#include <PLC_DIO14.h>
+PLC_DIO14 dio;
 
 void setup()
 {
