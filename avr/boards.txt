@@ -276,41 +276,6 @@ PLCAVR.menu.module.DIO14.upload.maximum_size=32256
 PLCAVR.menu.module.DIO14.upload.maximum_data_size=2048
 PLCAVR.menu.module.DIO14.upload.speed=57600
 
-## LCD terminal 1.0
-## -------------------------------------------------
-PLCAVR.menu.module.LCDTERMINAL=PLC-LCD TERMINAL
-
-PLCAVR.menu.module.LCDTERMINAL.bootloader.tool=avrdude
-PLCAVR.menu.module.LCDTERMINAL.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.LCDTERMINAL.bootloader.unlock_bits=0x3F
-PLCAVR.menu.module.LCDTERMINAL.bootloader.lock_bits=0x0F
-PLCAVR.menu.module.LCDTERMINAL.bootloader.high_fuses=0xD8
-PLCAVR.menu.module.LCDTERMINAL.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.LCDTERMINAL.bootloader.file=stk500boot_v2_mega2560.hex
-
-PLCAVR.menu.module.LCDTERMINAL.build.f_cpu=16000000L
-PLCAVR.menu.module.LCDTERMINAL.build.core=arduino
-PLCAVR.menu.module.LCDTERMINAL.build.variant=mega
-PLCAVR.menu.module.LCDTERMINAL.build.board=AVR_MEGA2560
-PLCAVR.menu.module.LCDTERMINAL.build.mcu=atmega2560
-PLCAVR.menu.module.LCDTERMINAL.upload.maximum_data_size=8192
-PLCAVR.menu.module.LCDTERMINAL.upload.protocol=wiring
-PLCAVR.menu.module.LCDTERMINAL.upload.maximum_size=253952
-PLCAVR.menu.module.LCDTERMINAL.upload.speed=115200
-
-PLCAVR.menu.module.LCDTERMINAL.vid.0=0x2341
-PLCAVR.menu.module.LCDTERMINAL.pid.0=0x0010
-PLCAVR.menu.module.LCDTERMINAL.vid.1=0x2341
-PLCAVR.menu.module.LCDTERMINAL.pid.1=0x0042
-PLCAVR.menu.module.LCDTERMINAL.vid.2=0x2A03
-PLCAVR.menu.module.LCDTERMINAL.pid.2=0x0010
-PLCAVR.menu.module.LCDTERMINAL.vid.3=0x2A03
-PLCAVR.menu.module.LCDTERMINAL.pid.3=0x0042
-PLCAVR.menu.module.LCDTERMINAL.vid.4=0x2341
-PLCAVR.menu.module.LCDTERMINAL.pid.4=0x0210
-PLCAVR.menu.module.LCDTERMINAL.vid.5=0x2341
-PLCAVR.menu.module.LCDTERMINAL.pid.5=0x0242
-
 ## MicroPLC 1.3
 ## -------------------------------------------------
 PLCAVR.menu.module.MICROPLC=PLC-Micro 1.3
@@ -324,7 +289,7 @@ PLCAVR.menu.module.MICROPLC.bootloader.file=optiboot_m328pb.hex
 
 PLCAVR.menu.module.MICROPLC.build.mcu=atmega328pb
 PLCAVR.menu.module.MICROPLC.build.f_cpu=16000000L
-PLCAVR.menu.module.MICROPLC.build.variant=microplc
+PLCAVR.menu.module.MICROPLC.build.variant=atmega328pb
 PLCAVR.menu.module.MICROPLC.build.board=AVR_UNO
 
 PLCAVR.menu.module.MICROPLC.upload.maximum_size=32256
@@ -428,20 +393,55 @@ PLCAVR.menu.module.WISP.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.X_ACCSENS=X-AccSens 1.0
 
-PLCAVR.menu.module.X_ACCSENS.bootloader.high_fuses=0xDA
+PLCAVR.menu.module.X_ACCSENS.bootloader.high_fuses=0xD6
 PLCAVR.menu.module.X_ACCSENS.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.X_ACCSENS.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.X_ACCSENS.bootloader.unlock_bits=0x3F
 PLCAVR.menu.module.X_ACCSENS.bootloader.lock_bits=0x0F
-PLCAVR.menu.module.X_ACCSENS.bootloader.file=ATmegaBOOT_168_atmega328.hex
+PLCAVR.menu.module.X_ACCSENS.bootloader.file=optiboot_m328pb.hex
 
-PLCAVR.menu.module.X_ACCSENS.build.mcu=atmega328p
+PLCAVR.menu.module.X_ACCSENS.build.mcu=ATmega328PB
 PLCAVR.menu.module.X_ACCSENS.build.f_cpu=16000000L
-PLCAVR.menu.module.X_ACCSENS.build.variant=atmega328p
+PLCAVR.menu.module.X_ACCSENS.build.variant=atmega328pb
 PLCAVR.menu.module.X_ACCSENS.build.board=AVR_UNO
 
-PLCAVR.menu.module.X_ACCSENS.upload.maximum_size=30000
+PLCAVR.menu.module.X_ACCSENS.upload.maximum_size=32256
 PLCAVR.menu.module.X_ACCSENS.upload.maximum_data_size=2048
 PLCAVR.menu.module.X_ACCSENS.upload.speed=57600
+
+## LCD terminal 1.0
+## -------------------------------------------------
+PLCAVR.menu.module.X_LCDTERMINAL=X-LCD TERMINAL
+
+PLCAVR.menu.module.X_LCDTERMINAL.bootloader.tool=avrdude
+PLCAVR.menu.module.X_LCDTERMINAL.bootloader.low_fuses=0xFF
+PLCAVR.menu.module.X_LCDTERMINAL.bootloader.unlock_bits=0x3F
+PLCAVR.menu.module.X_LCDTERMINAL.bootloader.lock_bits=0x0F
+PLCAVR.menu.module.X_LCDTERMINAL.bootloader.high_fuses=0xD8
+PLCAVR.menu.module.X_LCDTERMINAL.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.X_LCDTERMINAL.bootloader.file=stk500boot_v2_mega2560.hex
+
+PLCAVR.menu.module.X_LCDTERMINAL.build.f_cpu=16000000L
+PLCAVR.menu.module.X_LCDTERMINAL.build.core=arduino
+PLCAVR.menu.module.X_LCDTERMINAL.build.variant=mega
+PLCAVR.menu.module.X_LCDTERMINAL.build.board=AVR_MEGA2560
+PLCAVR.menu.module.X_LCDTERMINAL.build.mcu=atmega2560
+PLCAVR.menu.module.X_LCDTERMINAL.upload.maximum_data_size=8192
+PLCAVR.menu.module.X_LCDTERMINAL.upload.protocol=wiring
+PLCAVR.menu.module.X_LCDTERMINAL.upload.maximum_size=253952
+PLCAVR.menu.module.X_LCDTERMINAL.upload.speed=115200
+
+PLCAVR.menu.module.X_LCDTERMINAL.vid.0=0x2341
+PLCAVR.menu.module.X_LCDTERMINAL.pid.0=0x0010
+PLCAVR.menu.module.X_LCDTERMINAL.vid.1=0x2341
+PLCAVR.menu.module.X_LCDTERMINAL.pid.1=0x0042
+PLCAVR.menu.module.X_LCDTERMINAL.vid.2=0x2A03
+PLCAVR.menu.module.X_LCDTERMINAL.pid.2=0x0010
+PLCAVR.menu.module.X_LCDTERMINAL.vid.3=0x2A03
+PLCAVR.menu.module.X_LCDTERMINAL.pid.3=0x0042
+PLCAVR.menu.module.X_LCDTERMINAL.vid.4=0x2341
+PLCAVR.menu.module.X_LCDTERMINAL.pid.4=0x0210
+PLCAVR.menu.module.X_LCDTERMINAL.vid.5=0x2341
+PLCAVR.menu.module.X_LCDTERMINAL.pid.5=0x0242
 
 ###################   ATMEL AVR (END)  ##############################
