@@ -15,7 +15,7 @@ PLCAVR.upload.protocol=arduino
 ## Atmel 328P
 ## -------------------------------------------------
 PLCAVR.menu.module.ATMEL328P_8MHZ=* Atmel Mega328P (8Mhz)
-PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.unlock_bits=0xFF
@@ -35,7 +35,7 @@ PLCAVR.menu.module.ATMEL328P_8MHZ.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.ATMEL328P_16MHZ=* Atmel Mega328P (16Mhz)
 
-PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.unlock_bits=0xFF
@@ -55,7 +55,7 @@ PLCAVR.menu.module.ATMEL328P_16MHZ.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.ATMEL328P_20MHZ=* Atmel Mega328P (20Mhz)
 
-PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.unlock_bits=0xFF
@@ -75,7 +75,7 @@ PLCAVR.menu.module.ATMEL328P_20MHZ.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.ATMEL328PB_8MHZ=* Atmel Mega328PB (8Mhz)
 
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.unlock_bits=0xFF
@@ -95,12 +95,12 @@ PLCAVR.menu.module.ATMEL328PB_8MHZ.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.ATMEL328PB_16MHZ=* Atmel Mega328PB (16Mhz)
 
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.high_fuses=0xD6
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.file=optiboot_m328pb.hex
+PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.high_fuses=0xDE
+PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.low_fuses=0xFF
+PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.unlock_bits=0xFF
+PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.lock_bits=0xCF
+PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.file=optiboot_m328pb.hex
 
 PLCAVR.menu.module.ATMEL328PB_16MHZ.build.mcu=ATmega328PB
 PLCAVR.menu.module.ATMEL328PB_16MHZ.build.f_cpu=16000000L
@@ -115,12 +115,12 @@ PLCAVR.menu.module.ATMEL328PB_16MHZ.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.ATMEL328PB_20MHZ=* Atmel Mega328PB (20Mhz)
 
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.high_fuses=0xD6
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.file=optiboot_m328pb.hex
+PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.high_fuses=0xDE
+PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.low_fuses=0xFF
+PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.unlock_bits=0xFF
+PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.lock_bits=0xCF
+PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.file=optiboot_m328pb.hex
 
 PLCAVR.menu.module.ATMEL328PB_20MHZ.build.mcu=ATmega328PB
 PLCAVR.menu.module.ATMEL328PB_20MHZ.build.f_cpu=20000000L
@@ -239,7 +239,7 @@ PLCAVR.menu.module.MEGA2560_20MHZ.pid.5=0x0242
 ## -------------------------------------------------
 PLCAVR.menu.module.DIO13=PLC-DIO 1.3 (Arduino UNO shield)
 
-PLCAVR.menu.module.DIO13.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.DIO13.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.DIO13.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.DIO13.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.DIO13.bootloader.unlock_bits=0xFF
@@ -259,7 +259,7 @@ PLCAVR.menu.module.DIO13.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.DIO14=PLC-DIO 1.4 (Arduino NANO shield)
 
-PLCAVR.menu.module.DIO14.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.DIO14.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.DIO14.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.DIO14.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.DIO14.bootloader.unlock_bits=0xFF
@@ -279,7 +279,7 @@ PLCAVR.menu.module.DIO14.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.MICRO13=PLC-Micro 1.3
 
-PLCAVR.menu.module.MICRO13.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.MICRO13.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.MICRO13.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.MICRO13.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.MICRO13.bootloader.unlock_bits=0xFF
@@ -294,6 +294,26 @@ PLCAVR.menu.module.MICRO13.build.board=AVR_UNO
 PLCAVR.menu.module.MICRO13.upload.maximum_size=32256
 PLCAVR.menu.module.MICRO13.upload.maximum_data_size=2048
 PLCAVR.menu.module.MICRO13.upload.speed=57600
+
+## Plc-Nano 1.0
+## -------------------------------------------------
+PLCAVR.menu.module.NANO10=PLC-Nano 1.0
+
+PLCAVR.menu.module.NANO10.bootloader.high_fuses=0xDE
+PLCAVR.menu.module.NANO10.bootloader.low_fuses=0xFF
+PLCAVR.menu.module.NANO10.bootloader.extended_fuses=0xFD
+PLCAVR.menu.module.NANO10.bootloader.unlock_bits=0xFF
+PLCAVR.menu.module.NANO10.bootloader.lock_bits=0xCF
+PLCAVR.menu.module.NANO10.bootloader.file=optiboot_m328pb.hex
+
+PLCAVR.menu.module.NANO10.build.mcu=atmega328pb
+PLCAVR.menu.module.NANO10.build.f_cpu=20000000L
+PLCAVR.menu.module.NANO10.build.variant=atmega328pb
+PLCAVR.menu.module.NANO10.build.board=AVR_UNO
+
+PLCAVR.menu.module.NANO10.upload.maximum_size=32256
+PLCAVR.menu.module.NANO10.upload.maximum_data_size=2048
+PLCAVR.menu.module.NANO10.upload.speed=57600
 
 ## RFID Reader
 ## -------------------------------------------------
@@ -329,7 +349,7 @@ PLCAVR.menu.module.RFID.pid.0=0x0753
 ## -------------------------------------------------
 PLCAVR.menu.module.TM=PLC-TM
 
-PLCAVR.menu.module.TM.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.TM.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.TM.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.TM.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.TM.bootloader.unlock_bits=0xFF
@@ -349,7 +369,7 @@ PLCAVR.menu.module.TM.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.UK=PLC-UK
 
-PLCAVR.menu.module.UK.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.UK.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.UK.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.UK.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.UK.bootloader.unlock_bits=0xFF
@@ -369,16 +389,16 @@ PLCAVR.menu.module.UK.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.WISP=PLC-WISP
 
-PLCAVR.menu.module.WISP.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.WISP.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.WISP.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.WISP.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.WISP.bootloader.unlock_bits=0xFF
 PLCAVR.menu.module.WISP.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.WISP.bootloader.file=optiboot_m328pb.hex
+PLCAVR.menu.module.WISP.bootloader.file=ATmegaBOOT_168_atmega328_pro_8MHz.hex
 
-PLCAVR.menu.module.WISP.build.mcu=atmega328pb
-PLCAVR.menu.module.WISP.build.f_cpu=20000000L
-PLCAVR.menu.module.WISP.build.variant=atmega328pb
+PLCAVR.menu.module.WISP.build.mcu=atmega328p
+PLCAVR.menu.module.WISP.build.f_cpu=8000000L
+PLCAVR.menu.module.WISP.build.variant=atmega328p
 PLCAVR.menu.module.WISP.build.board=AVR_UNO
 
 PLCAVR.menu.module.WISP.upload.maximum_size=32256
@@ -391,7 +411,7 @@ PLCAVR.menu.module.WISP.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.X_ACCSENS=X-AccSens 1.0
 
-PLCAVR.menu.module.X_ACCSENS.bootloader.high_fuses=0xD6
+PLCAVR.menu.module.X_ACCSENS.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.X_ACCSENS.bootloader.low_fuses=0xFF
 PLCAVR.menu.module.X_ACCSENS.bootloader.extended_fuses=0xFD
 PLCAVR.menu.module.X_ACCSENS.bootloader.unlock_bits=0xFF
