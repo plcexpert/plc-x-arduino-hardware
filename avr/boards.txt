@@ -2,7 +2,14 @@
 
 ###################   ATMEL AVR   ##################################
 menu.module=Product
-PLCAVR.name= PLC-EXPERT (AVR)
+PLCGENERICAVR.name= PLC-EXPERT (CPUs)
+PLCAVR.name= PLC-EXPERT (Products)
+
+PLCGENERICAVR.bootloader.tool=avrdude
+PLCGENERICAVR.build.core=arduino
+PLCGENERICAVR.build.board=AVR_UNO
+PLCGENERICAVR.upload.tool=avrdude
+PLCGENERICAVR.upload.protocol=arduino
 
 PLCAVR.bootloader.tool=avrdude
 PLCAVR.build.core=arduino
@@ -10,228 +17,219 @@ PLCAVR.build.board=AVR_UNO
 PLCAVR.upload.tool=avrdude
 PLCAVR.upload.protocol=arduino
 
+## Atmel 328P
+## -------------------------------------------------
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ= Atmel Mega328P (8Mhz)
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.bootloader.high_fuses=0xDE
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.bootloader.low_fuses=0xFF
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.bootloader.extended_fuses=0xFD
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.bootloader.unlock_bits=0xFF
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.bootloader.lock_bits=0xCF
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.bootloader.file=ATmegaBOOT_168_atmega328_pro_8MHz.hex
 
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.build.mcu=atmega328p
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.build.f_cpu=8000000L
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.build.variant=atmega328p
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.build.board=AVR_UNO
+
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.upload.maximum_size=32256
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.upload.maximum_data_size=2048
+PLCGENERICAVR.menu.module.ATMEL328P_8MHZ.upload.speed=57600
 
 ## Atmel 328P
 ## -------------------------------------------------
-PLCAVR.menu.module.ATMEL328P_8MHZ=* Atmel Mega328P (8Mhz)
-PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.high_fuses=0xDE
-PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.ATMEL328P_8MHZ.bootloader.file=ATmegaBOOT_168_atmega328_pro_8MHz.hex
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ= Atmel Mega328P (16Mhz)
 
-PLCAVR.menu.module.ATMEL328P_8MHZ.build.mcu=atmega328p
-PLCAVR.menu.module.ATMEL328P_8MHZ.build.f_cpu=8000000L
-PLCAVR.menu.module.ATMEL328P_8MHZ.build.variant=atmega328p
-PLCAVR.menu.module.ATMEL328P_8MHZ.build.board=AVR_UNO
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.bootloader.high_fuses=0xDE
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.bootloader.low_fuses=0xFF
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.bootloader.extended_fuses=0xFD
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.bootloader.unlock_bits=0xFF
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.bootloader.lock_bits=0xCF
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.bootloader.file=ATmegaBOOT_168_atmega328.hex
 
-PLCAVR.menu.module.ATMEL328P_8MHZ.upload.maximum_size=32256
-PLCAVR.menu.module.ATMEL328P_8MHZ.upload.maximum_data_size=2048
-PLCAVR.menu.module.ATMEL328P_8MHZ.upload.speed=57600
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.build.mcu=atmega328p
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.build.f_cpu=16000000L
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.build.variant=atmega328p
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.build.board=AVR_UNO
 
-## Atmel 328P
-## -------------------------------------------------
-PLCAVR.menu.module.ATMEL328P_16MHZ=* Atmel Mega328P (16Mhz)
-
-PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.high_fuses=0xDE
-PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.ATMEL328P_16MHZ.bootloader.file=ATmegaBOOT_168_atmega328.hex
-
-PLCAVR.menu.module.ATMEL328P_16MHZ.build.mcu=atmega328p
-PLCAVR.menu.module.ATMEL328P_16MHZ.build.f_cpu=16000000L
-PLCAVR.menu.module.ATMEL328P_16MHZ.build.variant=atmega328p
-PLCAVR.menu.module.ATMEL328P_16MHZ.build.board=AVR_UNO
-
-PLCAVR.menu.module.ATMEL328P_16MHZ.upload.maximum_size=32256
-PLCAVR.menu.module.ATMEL328P_16MHZ.upload.maximum_data_size=2048
-PLCAVR.menu.module.ATMEL328P_16MHZ.upload.speed=57600
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.upload.maximum_size=32256
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.upload.maximum_data_size=2048
+PLCGENERICAVR.menu.module.ATMEL328P_16MHZ.upload.speed=57600
 
 ## Atmel 328P
 ## -------------------------------------------------
-PLCAVR.menu.module.ATMEL328P_20MHZ=* Atmel Mega328P (20Mhz)
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ= Atmel Mega328P (20Mhz)
 
-PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.high_fuses=0xDE
-PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.ATMEL328P_20MHZ.bootloader.file=ATmegaBOOT_168_atmega328.hex
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.bootloader.high_fuses=0xDE
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.bootloader.low_fuses=0xFF
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.bootloader.extended_fuses=0xFD
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.bootloader.unlock_bits=0xFF
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.bootloader.lock_bits=0xCF
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.bootloader.file=ATmegaBOOT_168_atmega328.hex
 
-PLCAVR.menu.module.ATMEL328P_20MHZ.build.mcu=atmega328p
-PLCAVR.menu.module.ATMEL328P_20MHZ.build.f_cpu=20000000L
-PLCAVR.menu.module.ATMEL328P_20MHZ.build.variant=atmega328p
-PLCAVR.menu.module.ATMEL328P_20MHZ.build.board=AVR_UNO
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.build.mcu=atmega328p
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.build.f_cpu=20000000L
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.build.variant=atmega328p
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.build.board=AVR_UNO
 
-PLCAVR.menu.module.ATMEL328P_20MHZ.upload.maximum_size=32256
-PLCAVR.menu.module.ATMEL328P_20MHZ.upload.maximum_data_size=2048
-PLCAVR.menu.module.ATMEL328P_20MHZ.upload.speed=57600
-
-## Atmel 328PB
-## -------------------------------------------------
-PLCAVR.menu.module.ATMEL328PB_8MHZ=* Atmel Mega328PB (8Mhz)
-
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.high_fuses=0xDE
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.ATMEL328PB_8MHZ.bootloader.file=optiboot_m328pb.hex
-
-PLCAVR.menu.module.ATMEL328PB_8MHZ.build.mcu=ATmega328PB
-PLCAVR.menu.module.ATMEL328PB_8MHZ.build.f_cpu=8000000L
-PLCAVR.menu.module.ATMEL328PB_8MHZ.build.variant=atmega328pb
-PLCAVR.menu.module.ATMEL328PB_8MHZ.build.board=AVR_UNO
-
-PLCAVR.menu.module.ATMEL328PB_8MHZ.upload.maximum_size=32256
-PLCAVR.menu.module.ATMEL328PB_8MHZ.upload.maximum_data_size=2048
-PLCAVR.menu.module.ATMEL328PB_8MHZ.upload.speed=57600
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.upload.maximum_size=32256
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.upload.maximum_data_size=2048
+PLCGENERICAVR.menu.module.ATMEL328P_20MHZ.upload.speed=57600
 
 ## Atmel 328PB
 ## -------------------------------------------------
-PLCAVR.menu.module.ATMEL328PB_16MHZ=* Atmel Mega328PB (16Mhz)
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ= Atmel Mega328PB (8Mhz)
 
-PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.high_fuses=0xDE
-PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.ATMEL328PB_16MHZ.bootloader.file=optiboot_m328pb.hex
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.bootloader.high_fuses=0xDE
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.bootloader.low_fuses=0xFF
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.bootloader.extended_fuses=0xFD
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.bootloader.unlock_bits=0xFF
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.bootloader.lock_bits=0xCF
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.bootloader.file=optiboot_m328pb.hex
 
-PLCAVR.menu.module.ATMEL328PB_16MHZ.build.mcu=ATmega328PB
-PLCAVR.menu.module.ATMEL328PB_16MHZ.build.f_cpu=16000000L
-PLCAVR.menu.module.ATMEL328PB_16MHZ.build.variant=atmega328pb
-PLCAVR.menu.module.ATMEL328PB_16MHZ.build.board=AVR_UNO
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.build.mcu=ATmega328PB
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.build.f_cpu=8000000L
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.build.variant=atmega328pb
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.build.board=AVR_UNO
 
-PLCAVR.menu.module.ATMEL328PB_16MHZ.upload.maximum_size=32256
-PLCAVR.menu.module.ATMEL328PB_16MHZ.upload.maximum_data_size=2048
-PLCAVR.menu.module.ATMEL328PB_16MHZ.upload.speed=57600
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.upload.maximum_size=32256
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.upload.maximum_data_size=2048
+PLCGENERICAVR.menu.module.ATMEL328PB_8MHZ.upload.speed=57600
 
 ## Atmel 328PB
 ## -------------------------------------------------
-PLCAVR.menu.module.ATMEL328PB_20MHZ=* Atmel Mega328PB (20Mhz)
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ= Atmel Mega328PB (16Mhz)
 
-PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.high_fuses=0xDE
-PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.ATMEL328PB_20MHZ.bootloader.file=optiboot_m328pb.hex
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.bootloader.high_fuses=0xDE
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.bootloader.low_fuses=0xFF
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.bootloader.extended_fuses=0xFD
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.bootloader.unlock_bits=0xFF
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.bootloader.lock_bits=0xCF
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.bootloader.file=optiboot_m328pb.hex
 
-PLCAVR.menu.module.ATMEL328PB_20MHZ.build.mcu=ATmega328PB
-PLCAVR.menu.module.ATMEL328PB_20MHZ.build.f_cpu=20000000L
-PLCAVR.menu.module.ATMEL328PB_20MHZ.build.variant=atmega328pb
-PLCAVR.menu.module.ATMEL328PB_20MHZ.build.board=AVR_UNO
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.build.mcu=ATmega328PB
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.build.f_cpu=16000000L
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.build.variant=atmega328pb
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.build.board=AVR_UNO
 
-PLCAVR.menu.module.ATMEL328PB_20MHZ.upload.maximum_size=32256
-PLCAVR.menu.module.ATMEL328PB_20MHZ.upload.maximum_data_size=2048
-PLCAVR.menu.module.ATMEL328PB_20MHZ.upload.speed=57600
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.upload.maximum_size=32256
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.upload.maximum_data_size=2048
+PLCGENERICAVR.menu.module.ATMEL328PB_16MHZ.upload.speed=57600
+
+## Atmel 328PB
+## -------------------------------------------------
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ= Atmel Mega328PB (20Mhz)
+
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.bootloader.high_fuses=0xDE
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.bootloader.low_fuses=0xFF
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.bootloader.extended_fuses=0xFD
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.bootloader.unlock_bits=0xFF
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.bootloader.lock_bits=0xCF
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.bootloader.file=optiboot_m328pb.hex
+
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.build.mcu=ATmega328PB
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.build.f_cpu=20000000L
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.build.variant=atmega328pb
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.build.board=AVR_UNO
+
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.upload.maximum_size=32256
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.upload.maximum_data_size=2048
+PLCGENERICAVR.menu.module.ATMEL328PB_20MHZ.upload.speed=57600
 
 ## AT TINY85
 ## -------------------------------------------------
-PLCAVR.menu.module.ATTINY85=* AtTiny85 (internal 16Mhz)
+PLCGENERICAVR.menu.module.ATTINY85= AtTiny85 (internal 16Mhz)
 
-PLCAVR.menu.module.ATTINY85.bootloader.high_fuses=0xDF
-PLCAVR.menu.module.ATTINY85.bootloader.low_fuses=0xF1
-PLCAVR.menu.module.ATTINY85.bootloader.extended_fuses=0xFF
-PLCAVR.menu.module.ATTINY85.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.ATTINY85.bootloader.lock_bits=0xFF
-PLCAVR.menu.module.ATTINY85.bootloader.file=attiny85.hex
-PLCAVR.menu.module.ATTINY85.bootloader.tool=arduino:avrdude
+PLCGENERICAVR.menu.module.ATTINY85.bootloader.high_fuses=0xDF
+PLCGENERICAVR.menu.module.ATTINY85.bootloader.low_fuses=0xF1
+PLCGENERICAVR.menu.module.ATTINY85.bootloader.extended_fuses=0xFF
+PLCGENERICAVR.menu.module.ATTINY85.bootloader.unlock_bits=0xFF
+PLCGENERICAVR.menu.module.ATTINY85.bootloader.lock_bits=0xFF
+PLCGENERICAVR.menu.module.ATTINY85.bootloader.file=attiny85.hex
+PLCGENERICAVR.menu.module.ATTINY85.bootloader.tool=arduino:avrdude
 
-PLCAVR.menu.module.ATTINY85.build.core=digistump:tiny
-PLCAVR.menu.module.ATTINY85.build.mcu=attiny85
-PLCAVR.menu.module.ATTINY85.build.f_cpu=16000000L
-PLCAVR.menu.module.ATTINY85.build.variant=tiny85
-PLCAVR.menu.module.ATTINY85.build.board=attiny
+PLCGENERICAVR.menu.module.ATTINY85.build.core=arduino:arduino
+PLCGENERICAVR.menu.module.ATTINY85.build.mcu=attiny85
+PLCGENERICAVR.menu.module.ATTINY85.build.f_cpu=16000000L
+PLCGENERICAVR.menu.module.ATTINY85.build.variant=tiny85
+PLCGENERICAVR.menu.module.ATTINY85.build.board=attiny
 
-PLCAVR.menu.module.ATTINY85.upload.maximum_size=8192
-PLCAVR.menu.module.ATTINY85.upload.maximum_data_size=512
-PLCAVR.menu.module.ATTINY85.upload.tool=micronucleus
-PLCAVR.menu.module.ATTINY85.upload.protocol=usb
-PLCAVR.menu.module.ATTINY85.upload.wait_for_upload_port=false
-PLCAVR.menu.module.ATTINY85.upload.use_1200bps_touch=false
-PLCAVR.menu.module.ATTINY85.upload.disable_flushing=false
-
-PLCAVR.menu.module.ATTINY85.msg.info=Press Reset when Uploading is shown.
-PLCAVR.menu.module.ATTINY85.vid.0=0x16D0
-PLCAVR.menu.module.ATTINY85.pid.0=0x0753
+PLCGENERICAVR.menu.module.ATTINY85.upload.maximum_size=8192
+PLCGENERICAVR.menu.module.ATTINY85.upload.maximum_data_size=512
+PLCGENERICAVR.menu.module.ATTINY85.upload.tool=arduino:avrdude
 
 ## AT MEGA2560
 ## -------------------------------------------------
-PLCAVR.menu.module.MEGA2560_16MHZ=* Atmel Mega2560 (16Mhz)
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ= Atmel Mega2560 (16Mhz)
 
-PLCAVR.menu.module.MEGA2560_16MHZ.bootloader.tool=avrdude
-PLCAVR.menu.module.MEGA2560_16MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.MEGA2560_16MHZ.bootloader.unlock_bits=0x3F
-PLCAVR.menu.module.MEGA2560_16MHZ.bootloader.lock_bits=0x0F
-PLCAVR.menu.module.MEGA2560_16MHZ.bootloader.high_fuses=0xD8
-PLCAVR.menu.module.MEGA2560_16MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.MEGA2560_16MHZ.bootloader.file=stk500boot_v2_mega2560.hex
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.bootloader.tool=avrdude
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.bootloader.low_fuses=0xFF
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.bootloader.unlock_bits=0x3F
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.bootloader.lock_bits=0x0F
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.bootloader.high_fuses=0xD8
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.bootloader.extended_fuses=0xFD
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.bootloader.file=stk500boot_v2_mega2560.hex
 
-PLCAVR.menu.module.MEGA2560_16MHZ.build.f_cpu=16000000L
-PLCAVR.menu.module.MEGA2560_16MHZ.build.core=arduino
-PLCAVR.menu.module.MEGA2560_16MHZ.build.variant=mega
-PLCAVR.menu.module.MEGA2560_16MHZ.build.board=AVR_MEGA2560
-PLCAVR.menu.module.MEGA2560_16MHZ.build.mcu=atmega2560
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.build.f_cpu=16000000L
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.build.core=arduino
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.build.variant=mega
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.build.board=AVR_MEGA2560
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.build.mcu=atmega2560
 
-PLCAVR.menu.module.MEGA2560_16MHZ.upload.maximum_data_size=8192
-PLCAVR.menu.module.MEGA2560_16MHZ.upload.protocol=wiring
-PLCAVR.menu.module.MEGA2560_16MHZ.upload.maximum_size=253952
-PLCAVR.menu.module.MEGA2560_16MHZ.upload.speed=115200
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.upload.maximum_data_size=8192
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.upload.protocol=wiring
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.upload.maximum_size=253952
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.upload.speed=115200
 
-PLCAVR.menu.module.MEGA2560_16MHZ.vid.0=0x2341
-PLCAVR.menu.module.MEGA2560_16MHZ.pid.0=0x0010
-PLCAVR.menu.module.MEGA2560_16MHZ.vid.1=0x2341
-PLCAVR.menu.module.MEGA2560_16MHZ.pid.1=0x0042
-PLCAVR.menu.module.MEGA2560_16MHZ.vid.2=0x2A03
-PLCAVR.menu.module.MEGA2560_16MHZ.pid.2=0x0010
-PLCAVR.menu.module.MEGA2560_16MHZ.vid.3=0x2A03
-PLCAVR.menu.module.MEGA2560_16MHZ.pid.3=0x0042
-PLCAVR.menu.module.MEGA2560_16MHZ.vid.4=0x2341
-PLCAVR.menu.module.MEGA2560_16MHZ.pid.4=0x0210
-PLCAVR.menu.module.MEGA2560_16MHZ.vid.5=0x2341
-PLCAVR.menu.module.MEGA2560_16MHZ.pid.5=0x0242
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.vid.0=0x2341
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.pid.0=0x0010
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.vid.1=0x2341
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.pid.1=0x0042
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.vid.2=0x2A03
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.pid.2=0x0010
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.vid.3=0x2A03
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.pid.3=0x0042
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.vid.4=0x2341
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.pid.4=0x0210
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.vid.5=0x2341
+PLCGENERICAVR.menu.module.MEGA2560_16MHZ.pid.5=0x0242
 
 ## AT MEGA2560
 ## -------------------------------------------------
-PLCAVR.menu.module.MEGA2560_20MHZ=* Atmel Mega2560 (20Mhz)
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ= Atmel Mega2560 (20Mhz)
 
-PLCAVR.menu.module.MEGA2560_20MHZ.bootloader.tool=avrdude
-PLCAVR.menu.module.MEGA2560_20MHZ.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.MEGA2560_20MHZ.bootloader.unlock_bits=0x3F
-PLCAVR.menu.module.MEGA2560_20MHZ.bootloader.lock_bits=0x0F
-PLCAVR.menu.module.MEGA2560_20MHZ.bootloader.high_fuses=0xD8
-PLCAVR.menu.module.MEGA2560_20MHZ.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.MEGA2560_20MHZ.bootloader.file=stk500boot_v2_mega2560.hex
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.bootloader.tool=avrdude
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.bootloader.low_fuses=0xFF
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.bootloader.unlock_bits=0x3F
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.bootloader.lock_bits=0x0F
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.bootloader.high_fuses=0xD8
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.bootloader.extended_fuses=0xFD
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.bootloader.file=stk500boot_v2_mega2560.hex
 
-PLCAVR.menu.module.MEGA2560_20MHZ.build.f_cpu=20000000L
-PLCAVR.menu.module.MEGA2560_20MHZ.build.core=arduino
-PLCAVR.menu.module.MEGA2560_20MHZ.build.variant=mega
-PLCAVR.menu.module.MEGA2560_20MHZ.build.board=AVR_MEGA2560
-PLCAVR.menu.module.MEGA2560_20MHZ.build.mcu=atmega2560
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.build.f_cpu=20000000L
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.build.core=arduino
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.build.variant=mega
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.build.board=AVR_MEGA2560
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.build.mcu=atmega2560
 
-PLCAVR.menu.module.MEGA2560_20MHZ.upload.maximum_data_size=8192
-PLCAVR.menu.module.MEGA2560_20MHZ.upload.protocol=wiring
-PLCAVR.menu.module.MEGA2560_20MHZ.upload.maximum_size=253952
-PLCAVR.menu.module.MEGA2560_20MHZ.upload.speed=115200
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.upload.maximum_data_size=8192
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.upload.protocol=wiring
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.upload.maximum_size=253952
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.upload.speed=115200
 
-PLCAVR.menu.module.MEGA2560_20MHZ.vid.0=0x2341
-PLCAVR.menu.module.MEGA2560_20MHZ.pid.0=0x0010
-PLCAVR.menu.module.MEGA2560_20MHZ.vid.1=0x2341
-PLCAVR.menu.module.MEGA2560_20MHZ.pid.1=0x0042
-PLCAVR.menu.module.MEGA2560_20MHZ.vid.2=0x2A03
-PLCAVR.menu.module.MEGA2560_20MHZ.pid.2=0x0010
-PLCAVR.menu.module.MEGA2560_20MHZ.vid.3=0x2A03
-PLCAVR.menu.module.MEGA2560_20MHZ.pid.3=0x0042
-PLCAVR.menu.module.MEGA2560_20MHZ.vid.4=0x2341
-PLCAVR.menu.module.MEGA2560_20MHZ.pid.4=0x0210
-PLCAVR.menu.module.MEGA2560_20MHZ.vid.5=0x2341
-PLCAVR.menu.module.MEGA2560_20MHZ.pid.5=0x0242
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.vid.0=0x2341
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.pid.0=0x0010
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.vid.1=0x2341
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.pid.1=0x0042
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.vid.2=0x2A03
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.pid.2=0x0010
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.vid.3=0x2A03
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.pid.3=0x0042
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.vid.4=0x2341
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.pid.4=0x0210
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.vid.5=0x2341
+PLCGENERICAVR.menu.module.MEGA2560_20MHZ.pid.5=0x0242
+
 
 ## -------------------- PRODUCTS --------------------
 
@@ -319,6 +317,8 @@ PLCAVR.menu.module.NANO10.upload.speed=57600
 ## -------------------------------------------------
 PLCAVR.menu.module.RFID=PLC-RFID Reader
 
+PLCGENERICAVR.menu.module.ATTINY85= AtTiny85 (internal 16Mhz)
+
 PLCAVR.menu.module.RFID.bootloader.high_fuses=0xDF
 PLCAVR.menu.module.RFID.bootloader.low_fuses=0xF1
 PLCAVR.menu.module.RFID.bootloader.extended_fuses=0xFF
@@ -327,7 +327,7 @@ PLCAVR.menu.module.RFID.bootloader.lock_bits=0xFF
 PLCAVR.menu.module.RFID.bootloader.file=attiny85.hex
 PLCAVR.menu.module.RFID.bootloader.tool=arduino:avrdude
 
-PLCAVR.menu.module.RFID.build.core=digistump:tiny
+PLCAVR.menu.module.RFID.build.core=arduino:arduino
 PLCAVR.menu.module.RFID.build.mcu=attiny85
 PLCAVR.menu.module.RFID.build.f_cpu=16000000L
 PLCAVR.menu.module.RFID.build.variant=tiny85
@@ -335,15 +335,6 @@ PLCAVR.menu.module.RFID.build.board=attiny
 
 PLCAVR.menu.module.RFID.upload.maximum_size=8192
 PLCAVR.menu.module.RFID.upload.maximum_data_size=512
-PLCAVR.menu.module.RFID.upload.tool=micronucleus
-PLCAVR.menu.module.RFID.upload.protocol=usb
-PLCAVR.menu.module.RFID.upload.wait_for_upload_port=false
-PLCAVR.menu.module.RFID.upload.use_1200bps_touch=false
-PLCAVR.menu.module.RFID.upload.disable_flushing=false
-
-PLCAVR.menu.module.RFID.msg.info=Press Reset when Uploading is shown.
-PLCAVR.menu.module.RFID.vid.0=0x16D0
-PLCAVR.menu.module.RFID.pid.0=0x0753
 
 ## TM - Temperature module
 ## -------------------------------------------------
@@ -367,7 +358,7 @@ PLCAVR.menu.module.TM.upload.speed=57600
 
 ## UK - universal kit
 ## -------------------------------------------------
-PLCAVR.menu.module.UK=PLC-UK
+PLCAVR.menu.module.UK=PLC-UK 1.4
 
 PLCAVR.menu.module.UK.bootloader.high_fuses=0xDE
 PLCAVR.menu.module.UK.bootloader.low_fuses=0xFF
@@ -384,26 +375,6 @@ PLCAVR.menu.module.UK.build.board=AVR_UNO
 PLCAVR.menu.module.UK.upload.maximum_size=32256
 PLCAVR.menu.module.UK.upload.maximum_data_size=2048
 PLCAVR.menu.module.UK.upload.speed=57600
-
-## WISP - Wirelles IPS programmer
-## -------------------------------------------------
-PLCAVR.menu.module.WISP=PLC-WISP
-
-PLCAVR.menu.module.WISP.bootloader.high_fuses=0xDE
-PLCAVR.menu.module.WISP.bootloader.low_fuses=0xFF
-PLCAVR.menu.module.WISP.bootloader.extended_fuses=0xFD
-PLCAVR.menu.module.WISP.bootloader.unlock_bits=0xFF
-PLCAVR.menu.module.WISP.bootloader.lock_bits=0xCF
-PLCAVR.menu.module.WISP.bootloader.file=ATmegaBOOT_168_atmega328_pro_8MHz.hex
-
-PLCAVR.menu.module.WISP.build.mcu=atmega328p
-PLCAVR.menu.module.WISP.build.f_cpu=8000000L
-PLCAVR.menu.module.WISP.build.variant=atmega328p
-PLCAVR.menu.module.WISP.build.board=AVR_UNO
-
-PLCAVR.menu.module.WISP.upload.maximum_size=32256
-PLCAVR.menu.module.WISP.upload.maximum_data_size=2048
-PLCAVR.menu.module.WISP.upload.speed=57600
 
 ## --------------------------- CUSTOMER PRODUCTS ---------------------
 
