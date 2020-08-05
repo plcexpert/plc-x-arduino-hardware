@@ -1,0 +1,10 @@
+#######################################
+# keywords.txt
+# Datatypes (KEYWORD1)
+# Methods and Functions (KEYWORD2)
+# Constants (LITERAL1)
+#######################################
+
+MAX5816 	KEYWORD1
+SetVoltage	KEYWORD2
+GetVoltage	KEYWORD2

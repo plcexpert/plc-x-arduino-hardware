@@ -5,7 +5,7 @@
 # For more info:
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
 
-name= PLC-EXPERT 'AVR' (www.plc-expert.com)
+name= PLC-X 'AVR' (www.plc-x.com)
 version=1.00.
 
 # AVR compile variables
