@@ -6,7 +6,7 @@
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
 
 name= PLC-X 'AVR' (www.plc-x.com)
-version=1.00.
+version=1.0.1
 
 # AVR compile variables
 # ---------------------
