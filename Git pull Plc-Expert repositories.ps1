@@ -1,6 +1,6 @@
 ﻿
 # PLC-Hardware support package for Arduino
-Write-Host -NoNewLine 'Pull PLC-EXPERT Arduino Hardware : ';
+Write-Host -NoNewLine 'Pull PLC-X Arduino Hardware : ';
 git pull
 
 # END
